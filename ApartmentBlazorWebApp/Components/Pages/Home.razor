@@ -2,6 +2,168 @@
 
 <PageTitle>Home</PageTitle>
 
-<h1>Hello, world!</h1>
+@* Hero Section *@
+<section id="home" class="hero-section">
+    <div class="container">
+        <div class="hero-card text-center">
+            <h1 class="hero-title">Welcome to XYZ</h1>
+            <p class="hero-text">
+                Tag line text
+            </p>
 
-Welcome to your new app.
+            <div class="hero-actions">
+                <a href="#rooms" class="btn btn-primary btn-lg">View Rooms</a>
+                <a href="#contact" class="btn btn-outline-dark btn-lg">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+@* Main Page Sections *@
+<main class="page-sections">
+    <div class="container">
+
+        @* Location Section *@
+        <section id="location" class="section-card">
+            <div class="section-header">
+                <h2>Our Location</h2>
+                <p class="section-intro">
+                    Find us in a convenient area close to local landmarks and everyday essentials.
+                </p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-box">
+                    <h3>Address</h3>
+                    <p>
+                        Location address, house number, postcode<br />
+                    </p>
+                </div>
+
+                <div class="info-box">
+                    <h3>Nearby Landmarks</h3>
+                    <ul>
+                        <li>Landmark 1</li>
+                        <li>Landmark 2</li>
+                        <li>Landmark 3</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        @* Amenities Section *@
+        <section id="amenities" class="section-card">
+            <div class="section-header">
+                <h2>Amenities</h2>
+                <p class="section-intro">
+                    Each room is designed to provide the essential facilities needed for daily living.
+                </p>
+            </div>
+
+            <div class="amenity-grid">
+                <article class="small-card">
+                    <h3>Water Supply</h3>
+                    <p>Water is available for each room. Water usage is paid separately by the client.</p>
+                </article>
+
+                <article class="small-card">
+                    <h3>Electricity</h3>
+                    <p>Electricity is available for each room. Electricity usage is paid separately by the client.</p>
+                </article>
+
+                <article class="small-card">
+                    <h3>Private Bathroom</h3>
+                    <p>Each room includes its own bathroom with toilet and water tap.</p>
+                </article>
+
+                <article class="small-card">
+                    <h3>Kitchen Area</h3>
+                    <p>Each room includes a kitchen area for preparing meals with cabinets for storage.</p>
+                </article>
+
+                <article class="small-card">
+                    <h3>Parking</h3>
+                    <p>Parking is available for motorbikes only.</p>
+                </article>
+            </div>
+        </section>
+
+        @* Rooms Section *@
+        <section id="rooms" class="section-card">
+            <div class="section-header">
+                <h2>Room Types</h2>
+                <p class="section-intro">
+                    Photos will be added shortly. Please contact us through Facebook/Messenger or email to confirm the latest availability or request room pictures.
+                </p>
+            </div>
+
+            <div class="room-grid">
+                <article class="room-card">
+                    <div class="room-image-placeholder">Photos coming soon</div>
+                    <div class="room-content">
+                        <h3>Ground Floor Rooms</h3>
+                        <p>Suitable for group of tenants who prefer easier access without using stairs.</p>
+                        <p class="room-price">₱11,000 / month</p>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-image-placeholder">Photos coming soon</div>
+                    <div class="room-content">
+                        <h3>Second Floor Rooms</h3>
+                        <p>Simple and practical rooms with essential facilities included.</p>
+                        <p class="room-price">₱7,000 / month</p>
+                    </div>
+                </article>
+
+                <article class="room-card">
+                    <div class="room-image-placeholder">Photos coming soon</div>
+                    <div class="room-content">
+                        <h3>Third Floor Rooms</h3>
+                        <p>Simple and practical rooms with essential facilities included.</p>
+                        <p class="room-price">₱7,000 / month</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        @* FAQ Section *@
+        <section id="faq" class="section-card">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p class="section-intro">
+                    Important information for potential tenants before making an inquiry.
+                </p>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item">
+                    <summary>How much is required before moving in?</summary>
+                    <p>Please contact us directly to confirm the latest move-in requirements but tenants are required to pay 1 month deposit and
+                    1 month advance before moving in.</p>
+                </details>
+
+                <details class="faq-item">
+                    <summary>How can I inquire or reserve a room?</summary>
+                    <p>You can contact us through Facebook/Messenger or email. We will confirm room availability before any reservation.</p>
+                </details>
+            </div>
+        </section>
+
+        @* Contact Section *@
+        <section id="contact" class="section-card contact-card">
+            <div class="section-header">
+                <h2>Send an Inquiry</h2>
+                <p class="section-intro">
+                    Message us to confirm availability, request room photos or ask about pricing.
+                </p>
+            </div>
+
+            <div class="contact-actions">
+                <a href="mailto:example@email.com" class="btn btn-outline-dark">Email Us</a>
+                <a href="#" class="btn btn-outline-dark">Facebook</a>
+            </div>
+        </section>
+
+    </div>
+</main>
