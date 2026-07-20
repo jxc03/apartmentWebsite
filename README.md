@@ -8,7 +8,7 @@
 - What is it?
   - The main page of the wesbite.
   - Essential and required information of the apartment.
--  What's done
+- What's done
   - HTML with the essential required information.
   - Simple CSS to distinct each section.
 - What needs done
@@ -20,7 +20,7 @@
 ### Login Page
 - What is it?
   - Allow existing clients to login.
--  What's done
+- What's done
   - HTML with the essential required information (email & password).
   - Simple CSS layout.
   - A preview section.
