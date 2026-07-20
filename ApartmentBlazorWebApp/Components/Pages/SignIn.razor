@@ -1,0 +1,75 @@
+@page "/sign-in"
+
+<PageTitle>Client Sign In</PageTitle>
+
+<section class="auth-page">
+    <div class="container">
+        <div class="auth-grid">
+            <section class="auth-card sign-in-card" aria-labelledby="sign-in-heading">
+                <h1 id="sign-in-heading">Sign in to your account</h1>
+                <p class="auth-intro">
+                    Please use the details we have provided you to sign in.
+                </p>
+
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input id="email" name="email" type="email" class="form-control" placeholder="client@email.com" autocomplete="email" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" class="form-control" placeholder="Enter your password" autocomplete="current-password" />
+                    </div>
+
+                    <div class="auth-options">
+                        <label class="remember-me">
+                            <input type="checkbox" />
+                            <span>Remember me</span>
+                        </label>
+
+                        <!-- TODO: Forgot password page -->
+                        <a href="#">Forgot password?</a>
+                    </div>
+
+                    <!-- Temporary navigation link while real authentication is not connected yet -->
+                    <a href="/client-portal" class="btn btn-primary auth-submit">Sign In</a>
+                </form>
+            </section>
+
+            <aside class="auth-card portal-preview-card" aria-labelledby="portal-preview-heading">
+                <span class="status-pill">Portal Preview</span>
+                <h2 id="portal-preview-heading">What clients can access</h2>
+                <p>
+                    Existing tenants can sign in to view upcoming monthly bills, check previous payments and access payment options.
+                </p>
+
+                <div class="preview-list">
+                    <div class="preview-item">
+                        <span>1</span>
+                        <div>
+                            <h3>Upcoming payments</h3>
+                            <p>Show the next rent due date and amount.</p>
+                        </div>
+                    </div>
+
+                    <div class="preview-item">
+                        <span>2</span>
+                        <div>
+                            <h3>Monthly bill payment</h3>
+                            <p>A simple payment button for rent or deposits.</p>
+                        </div>
+                    </div>
+
+                    <div class="preview-item">
+                        <span>3</span>
+                        <div>
+                            <h3>Payment history</h3>
+                            <p>Review previous payments and their status.</p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
