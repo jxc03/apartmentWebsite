@@ -1,16 +1,32 @@
 ﻿@inherits LayoutComponentBase
 
 <div class="page">
-    <div class="sidebar">
-        <NavMenu />
-    </div>
+    @* 
+    Main website header.
+    This replaces the default Blazor sidebar and the old About top bar. 
+    *@
+    <header class="page-header">
+        <nav class="page-nav" aria-label="Main navigation">
+            <a class="page-logo" href="/">
+                XYZ Apartment
+            </a>
+
+            <div class="page-links">
+                <a href="/#location">Location</a>
+                <a href="/#amenities">Amenities</a>
+                <a href="/#rooms">Rooms</a>
+                <a href="/#faq">FAQ</a>
+                <a href="/#contact">Contact</a>
+            </div>
+
+            <a class="sign-in-button" href="/sign-in">
+                Sign In
+            </a>
+        </nav>
+    </header>
 
     <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
-        </div>
-
-        <article class="content px-4">
+        <article class="content">
             @Body
         </article>
     </main>
@@ -21,3 +37,4 @@
     <a href="." class="reload">Reload</a>
     <span class="dismiss">🗙</span>
 </div>
+
